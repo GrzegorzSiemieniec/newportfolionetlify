@@ -493,7 +493,7 @@ export default function Home() {
         initial="hide"
         whileInView="show"
         exit="hide" 
-        className="text-[#291C3A] mt-20 mb-8 xl:text-6xl lg:text-6xl md:text-5xl font-extrabold">Let`&apos;`s start working together.</motion.h1>
+        className="text-[#291C3A] mt-20 mb-8 xl:text-6xl lg:text-6xl md:text-5xl font-extrabold">Let&apos;s start working together.</motion.h1>
 
         <motion.p 
         initial="hide"

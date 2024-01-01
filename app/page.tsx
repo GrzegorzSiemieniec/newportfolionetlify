@@ -315,7 +315,7 @@ export default function Home() {
           variants={introPictureVariants}
         >
           <Swiper
-            slidesPerView={3}
+            slidesPerView={4}
             // dla lg 3 dla md 3 i sm 2
             className= "mb-52 text-center hover:cursor-grab select-none xl:h-[430px] lg:h-[365px] md:h-[340px]"
           >
@@ -324,7 +324,7 @@ export default function Home() {
                 <Image
                   src={papugi}
                   alt="Your Image Description"
-                  width={130}
+                  width={200}
                   // dla lg 150 dla md 130 i sm
                   className=" mx-auto py-6 rounded-2xl"
                 />
@@ -351,7 +351,7 @@ export default function Home() {
                 <Image
                   src={papugi}
                   alt="Your Image Description"
-                  width={130}
+                  width={200}
                   // dla lg 150 dla md 130 i sm
                   className=" mx-auto py-6 rounded-2xl"
                 />
@@ -378,7 +378,7 @@ export default function Home() {
                 <Image
                   src={papugi}
                   alt="Your Image Description"
-                  width={130}
+                  width={200}
                   // dla lg 150 dla md 130 i sm
                   className=" mx-auto py-6 rounded-2xl"
                 />
@@ -405,7 +405,7 @@ export default function Home() {
                 <Image
                   src={papugi}
                   alt="Your Image Description"
-                  width={130}
+                  width={200}
                   // dla lg 150 dla md 130 i sm
                   className=" mx-auto py-6 rounded-2xl"
                 />
@@ -432,7 +432,7 @@ export default function Home() {
                 <Image
                   src={papugi}
                   alt="Your Image Description"
-                  width={130}
+                  width={200}
                   // dla lg 150 dla md 130 i sm
                   className=" mx-auto py-6 rounded-2xl"
                 />
@@ -459,7 +459,7 @@ export default function Home() {
                 <Image
                   src={papugi}
                   alt="Your Image Description"
-                  width={130}
+                  width={200}
                   // dla lg 150 dla md 130 i sm
                   className=" mx-auto py-6 rounded-2xl"
                 />
@@ -493,7 +493,7 @@ export default function Home() {
         initial="hide"
         whileInView="show"
         exit="hide" 
-        className="text-[#291C3A] mt-20 mb-8 xl:text-6xl lg:text-6xl md:text-5xl font-extrabold">Let`&apos;`s start working together.</motion.h1>
+        className="text-[#291C3A] mt-20 mb-8 xl:text-6xl lg:text-6xl md:text-5xl font-extrabold">Let&apos;s start working together.</motion.h1>
 
         <motion.p 
         initial="hide"
@@ -532,7 +532,7 @@ export default function Home() {
           >
             Designed and build by
             <p className=" inline bg-gradient-to-r from-[#c188f0] via-[#b666f8] to-[#e50dec] bg-clip-text text-transparent">
-              CezikDEV
+            &nbsp;CezikDEV&nbsp;
             </p>
             ©2023
           </motion.p>

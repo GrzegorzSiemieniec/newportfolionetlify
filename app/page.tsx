@@ -530,11 +530,10 @@ export default function Home() {
             exit="hide"
             variants={textFromLeftAnimationFooter}
           >
-            Designed and build by
+            ©2024 Designed and build by
             <p className=" inline bg-gradient-to-r from-[#c188f0] via-[#b666f8] to-[#e50dec] bg-clip-text text-transparent">
             &nbsp;Grzegorz Siemieniec&nbsp;
             </p>
-            ©2024
           </motion.p>
         </div>
       </div>

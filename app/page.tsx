@@ -493,7 +493,7 @@ export default function Home() {
         initial="hide"
         whileInView="show"
         exit="hide" 
-        className="text-[#291C3A] mt-20 mb-8 xl:text-6xl lg:text-6xl md:text-5xl font-extrabold">Let&apos;s start working together.</motion.h1>
+        className="text-[#291C3A] mt-20 mb-8 xl:text-6xl lg:text-6xl md:text-5xl font-extrabold">Start working with me.</motion.h1>
 
         <motion.p 
         initial="hide"
@@ -532,9 +532,9 @@ export default function Home() {
           >
             Designed and build by
             <p className=" inline bg-gradient-to-r from-[#c188f0] via-[#b666f8] to-[#e50dec] bg-clip-text text-transparent">
-            &nbsp;CezikDEV&nbsp;
+            &nbsp;Grzegorz Siemieniec&nbsp;
             </p>
-            ©2023
+            ©2024
           </motion.p>
         </div>
       </div>

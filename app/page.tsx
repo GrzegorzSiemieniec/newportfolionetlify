@@ -200,7 +200,7 @@ export default function Home() {
             Technologies I have been working recently
           </p>
           <motion.ul
-            className=" inline-grid grid-cols-3 xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-3 gap-3 my-auto mx-auto xl:pr-24 lg:pr-7 md:pr-5 sm:pr-5 pb-16"
+            className=" inline-grid grid-cols-4 xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-3 gap-3 my-auto mx-auto xl:pr-24 lg:pr-7 md:pr-5 sm:pr-5 pb-16"
             initial="hide"
             whileInView="show"
             exit="hide"
@@ -294,7 +294,7 @@ export default function Home() {
                   }}
               />
             </li>
-            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 w-14 h-14 bg-[#4f3e63] rounded-lg text-white p-3 ">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 w-14 h-14 bg-[#4f3e63] rounded-lg text-white p-3 xl:visible lg:visible md:visible sm:invisible invisible">
               <Image
                 src={html}
                 alt="HTML icon"

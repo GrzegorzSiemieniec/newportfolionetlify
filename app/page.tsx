@@ -100,37 +100,28 @@ export default function Home() {
       },
     },
   };
+  
 
   return (
     <main className="flex flex-col items-center font-Inter select-none max-w-full scrollbar-none">
-      <div className="menu bg-gradient-to-r from-[#8121D0] via-[#5a2983] to-[#291C3A] w-full inline-flex h-24 my-auto">
-        <Image
-          src={yourImage}
-          alt="Your Image Description"
-          width={270}
-          height={50}
-        />
-
-        <ul className="menuLi text-white text-2xl inline-flex my-auto">
-          <li className=" xl:ml-14  lg:ml-14 md:ml-10 hover:scale-125 transition-transform">
-            <a href="#home">Home</a>
-          </li>
-          <li className="xl:ml-14 lg:ml-14 md:ml-10 hover:scale-125 transition-transform">
+      <div className="menu bg-gradient-to-r from-[#8121D0] via-[#5a2983] to-[#291C3A] w-full inline-flex h-auto p-5 my-auto items-center justify-center">
+        <ul className="menuLi text-white xl:text-2xl lg:text-2xl md:text-xl sm:text-xl text-lg inline-flex my-auto">
+          <li className="hover:scale-125 transition-transform">
             <a href="#aboutme">About</a>
           </li>
-          <li className="xl:ml-14 lg:ml-14 md:ml-10 hover:scale-125 transition-transform">
-            <a href="#skills">Skills</a>
+          <li className="xl:ml-14 lg:ml-14 md:ml-10 sm:ml-8 ml-8 hover:scale-125 transition-transform">
+            <a href="#">Resume</a>
           </li>
-          <li className="xl:ml-14 lg:ml-14 md:ml-10 hover:scale-125 transition-transform">
+          <li className="xl:ml-14 lg:ml-14 md:ml-10 sm:ml-8 ml-8 hover:scale-125 transition-transform">
             <a href="#projects">Projects</a>
           </li>
         </ul>
       </div>
       <div
         id="home"
-        className="introduction bg-[#331C52] w-full pl-24 h-fit pt-52 transition-transform transform"
+        className="introduction bg-[#331C52] w-full xl:pl-24 lg:pl-7 md:pl-7 sm:pl-7 h-fit xl:pt-52 lg:pt-44 md:pt-36 sm:pt-20 pt-16 pl-6 transition-transform transform"
       >
-        <p className="font-bold text-[#9d7fc7] text-8xl pb-8">
+        <p className="font-bold text-[#9d7fc7] xl:text-8xl ld:text-8xl md:text-7xl sm:text-7xl text-6xl pb-5">
           <Typewriter
             options={{
               delay: 30,
@@ -140,13 +131,13 @@ export default function Home() {
             }}
           />
         </p>
-        <p className=" text-5xl pb-6">Grzegorz Siemieniec</p>
+        <p className=" xl:text-5xl lg:text-5xl md:text-3xl sm:text-3xl text-2xl pb-5">Grzegorz Siemieniec</p>
         <ul className="inline-flex">
           <li className="mr-3">
             <a href="https://github.com/GrzegorzSiemieniec">
               <FontAwesomeIcon
                 icon={faGithub}
-                className="w-8 h-8 text-[#9d7fc7] rounded-lg hover:cursor-pointer"
+                className="xl:w-8 xl:h-8 lg:w-8 lg:h-8 md:w-7 md:h-7 sm:w-7 sm:h-5 w-7 h-5 text-[#9d7fc7] rounded-lg hover:cursor-pointer"
               />
             </a>
           </li>
@@ -154,7 +145,7 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/grzegorz-siemieniec-526539250/">
               <FontAwesomeIcon
                 icon={faLinkedin}
-                className="w-8 h-8 text-[#9d7fc7] rounded-lg mb-20 hover:cursor-pointer"
+                className="xl:w-8 xl:h-8 lg:w-8 lg:h-8 md:w-7 md:h-7 sm:w-7 sm:h-7  w-7 h-5 text-[#9d7fc7] rounded-lg xl:mb-20 lg:mb-20 md:mb-16 sm:mb-14 mb-8 hover:cursor-pointer"
               />
             </a>
           </li>
@@ -162,7 +153,7 @@ export default function Home() {
       </div>
       <div
         id="skills"
-        className="skills h-28 bg-[#291C3A] w-full transition-transform transform pt-2 flex"
+        className="skills h-auto bg-[#291C3A] w-full transition-transform transform flex sm:pl-7 xl:pl-24 lg:pl-7 md:pl-7 pl-5 pt-2 pb-2"
       >
         <motion.p
           className=" inline-flex justify-center items-center"
@@ -171,13 +162,13 @@ export default function Home() {
           exit="hide"
           variants={Skills}
         >
-          <span className="xl:text-8xl font-bold xl:mr-5 lg:mr-4 md:mr-4 xl:pl-24 lg:pl-7 md:pl-5 lg:text-8xl md:text-7xl sm:text-9xl">6</span>
-          <p className="xl:text-4xl lg:text-4xl md:text-3xl items-center text-[#DCCFED]">
+          <span className="xl:text-8xl font-bold xl:mr-5 lg:mr-4 md:mr-4 lg:text-8xl md:text-7xl sm:text-7xl text-5xl">6</span>
+          <p className="xl:text-4xl lg:text-4xl md:text-3xl sm:text-2xl text-xl items-center text-[#DCCFED] pl-2">
             <span>PROJECTS</span> <span className="block">COMPLETED</span>
           </p>
 
-          <span className="xl:text-8xl font-bold xl:mr-5 lg:mr-4 md:mr-4 xl:ml-24 lg:ml-20 md:ml-14 lg:text-8xl md:text-7xl">1</span>
-          <p className="xl:text-4xl lg:text-4xl md:text-3xl items-center text-[#DCCFED]">
+          <span className="xl:text-8xl font-bold xl:mr-5 lg:mr-4 md:mr-4 xl:pl-24 lg:pl-7 md:pl-7 sm:pl-7 pl-5 lg:text-8xl md:text-7xl sm:text-7xl text-5xl">1</span>
+          <p className="xl:text-4xl lg:text-4xl md:text-3xl text-xl pl-2 items-center text-[#DCCFED]">
             <span>YEAR OF</span>
             <span className="block">EXPERIENCE</span>
           </p>
@@ -185,13 +176,13 @@ export default function Home() {
       </div>
       <div
         id="aboutme"
-        className="about h-fit bg-[#E1EBED] transition-transform transform w-full"
+        className="about h-auto bg-[#E1EBED] transition-transform transform w-full"
       >
-        <p className="text-[#291C3A] xl:text-4xl lg:text-4xl md:text-3xl font-bold xl:pl-24 mt-20 mb-12 lg:pl-7 md:pl-5">
+        <p className="text-[#291C3A] xl:text-4xl lg:text-4xl md:text-3xl font-bold  xl:mt-20 xl:mb-12 lg:mt-20 lg:mb-12 md:mt-16 md:mb-10 sm:mt-14 sm:mb-10 xl:pl-24 lg:pl-7 md:pl-7 sm:pl-5 pl-3 mt-8 mb-4 text-xl">
           About me
         </p>
         <motion.p
-          className=" text-[#291C3A] xl:text-3xl lg:text-3xl md:text-2xl xl:pl-24 mt-10 mb-12 lg:pl-7 md:pl-5"
+          className=" text-[#291C3A] xl:text-3xl lg:text-3xl md:text-2xl sm:text-xl xl:pl-24 pb-32 lg:pl-7 md:pl-7 sm:pl-5 pl-3 text-base"
           initial="hide"
           whileInView="show"
           exit="hide"
@@ -203,96 +194,126 @@ export default function Home() {
           I can also write programs in Node.js, <br />
           but I am more passionate about building websites :)
         </motion.p>
-        <p className="text-[#291C3A] xl:text-4xl lg:text-4xl md:text-3xl font-bold mt-20 mb-12 float-right xl:pr-24 lg:pr-7 md:pl-5">
+        <p className="text-[#291C3A] xl:text-4xl lg:text-4xl md:text-3xl font-bold  xl:mt-20 xl:mb-12 lg:mt-20 lg:mb-12 md:mt-16 md:mb-10 sm:mt-14 sm:mb-10 xl:pr-24 lg:pr-7 md:pr-5 sm:pr-5 pr-3 mt-8 pb-32 text-xl float-right">
           My Skills
-          <p className=" text-[#291C3A] xl:text-3xl lg:text-3xl md:text-2xl mt-10 mb-12 font-normal xl:pr-24 lg:pr-7 md:pr-5">
+          <p className=" text-[#291C3A] xl:text-3xl lg:text-3xl md:text-2xl mt-4 pb-8 font-normal xl:pr-24 lg:pr-7 md:pr-5 sm:pr-5 text-base">
             Technologies I have been working recently
           </p>
           <motion.ul
-            className=" inline-grid grid-cols-5 gap-5 my-auto mx-auto xl:pr-24 lg:pr-7 md:pr-5"
+            className=" inline-grid grid-cols-3 gap-3 my-auto mx-auto xl:pr-24 lg:pr-7 md:pr-5 sm:pr-5 pb-16"
             initial="hide"
             whileInView="show"
             exit="hide"
             variants={Skills}
           >
-            <li className="w-24 h-24 bg-[#4f3e63] rounded-lg text-white p-5">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white p-4">
               <Image
                 src={vue}
-                alt="Your Image Description"
-                width={86}
-                height={86}
+                alt="Vue icon"
+                sizes="100vw"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                  }}
               />
             </li>
-            <li className="w-24 h-24 bg-[#4f3e63] rounded-lg text-white pt-2">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white pt-1 ">
               <Image
                 src={next}
-                alt="Your Image Description"
-                width={96}
-                height={96}
+                alt="Next icon"
+                sizes="100vw"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                  }}
               />
             </li>
-            <li className="w-24 h-24 bg-[#4f3e63] rounded-lg text-white p-5">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white p-3">
               <Image
                 src={git}
-                alt="Your Image Description"
-                width={86}
-                height={86}
+                alt="Git icon"
+                sizes="100vw"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                }}
               />
             </li>
-            <li className="w-24 h-24 bg-[#4f3e63] rounded-lg text-white pt-5">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white pt-4 ">
               <Image
                 src={node}
-                alt="Your Image Description"
-                width={100}
-                height={100}
+                alt="Node icon"
+                sizes="100vw"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                }}
               />
             </li>
-            <li className="w-24 h-24 bg-[#4f3e63] rounded-lg text-white p-5">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white p-3">
               <Image
                 src={js}
-                alt="Your Image Description"
-                width={86}
-                height={86}
+                alt="JS icon"
+                sizes="100vw"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                }}
               />
             </li>
-            <li className="w-24 h-24 bg-[#4f3e63] rounded-lg text-white">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white p-1 ">
               <Image
                 src={mongodb}
-                alt="Your Image Description"
-                width={100}
-                height={100}
+                alt="Mongodb icon"
+                sizes="100vw"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                  }}
               />
             </li>
-            <li className="w-24 h-24 bg-[#4f3e63] rounded-lg text-white p-5">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white p-3">
               <Image
                 src={react}
-                alt="Your Image Description"
-                width={86}
-                height={86}
+                alt="React icon"
+                sizes="100vw"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                  }}
               />
             </li>
-            <li className="w-24 h-24 bg-[#4f3e63] rounded-lg text-white pl-1">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white p-2">
               <Image
                 src={tailwind}
-                alt="Your Image Description"
-                width={88}
-                height={88}
+                alt="Tailwind icon"
+                sizes="100vw"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                  }}
               />
             </li>
-            <li className="w-24 h-24 bg-[#4f3e63] rounded-lg text-white pl-1 pt-6">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white pt-5 p-1 ">
               <Image
                 src={php}
-                alt="Your Image Description"
-                width={88}
-                height={88}
+                alt="PHP icon"
+                sizes="100vw"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                  }}
               />
             </li>
-            <li className="w-24 h-24 bg-[#4f3e63] rounded-lg text-white p-5">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white p-3 ">
               <Image
                 src={html}
-                alt="Your Image Description"
-                width={86}
-                height={86}
+                alt="HTML icon"
+                sizes="100vw"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                  }}
               />
             </li>
           </motion.ul>
@@ -302,10 +323,10 @@ export default function Home() {
         id="projects"
         className="about h-fit bg-[#E1EBED] transition-transform transform w-full"
       >
-        <p className="text-[#291C3A] xl:text-4xl lg:text-4xl md:text-3xl font-bold xl:pl-24 mt-20 mb-12 lg:pl-7 md:pl-5">
+        <p className="text-[#291C3A] xl:text-4xl lg:text-4xl md:text-3xl font-bold  xl:mt-20 xl:mb-12 lg:mt-20 lg:mb-12 md:mt-16 md:mb-10 sm:mt-14 sm:mb-10 xl:pl-24 mt-20 mb-12 lg:pl-7 md:pl-7 sm:pl-5 pl-3 text-xl">
           My Projects
         </p>
-        <p className=" text-[#291C3A] xl:text-3xl lg:text-3xl md:text-2xl xl:pl-24 mt-10 mb-12 lg:pl-7 md:pl-5">
+        <p className=" text-[#291C3A] xl:text-3xl lg:text-3xl md:text-2xl mt-10 mb-12 font-normal xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3 text-base pb-8">
           Some Things I have build so far
         </p>
         <motion.div
@@ -315,27 +336,30 @@ export default function Home() {
           variants={introPictureVariants}
         >
           <Swiper
-            slidesPerView={4}
-            // dla lg 3 dla md 3 i sm 2
-            className= "mb-52 text-center hover:cursor-grab select-none xl:h-[430px] lg:h-[365px] md:h-[340px]"
+            slidesPerView={2}
+            // dla md i sd 3/2
+            className= "xl:mb-52 lg:mb-52 md:mb-44 sm:mb-36 text-center hover:cursor-grab select-none xl:h-[442px] lg:h-[389px] md:h-[360px] sm:h-[338px] h-[338px]"
           >
-            <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5">
-              <div className=" bg-[#DCCFED] xl:h-[420px] xl:w-[280px] lg:h-[355px] lg:w-[220px] md:w-[200px] md:h-[330px] rounded-lg shadow-gray-800/60 shadow-md select-none">
+            <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3">
+              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[180px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
                 <Image
                   src={papugi}
-                  alt="Your Image Description"
-                  width={200}
-                  // dla lg 150 dla md 130 i sm
+                  alt="Miniatur"
+                  sizes="100vw"
+                  style={{
+                    width: '75%',
+                    height: 'auto',
+                  }}
                   className=" mx-auto py-6 rounded-2xl"
                 />
-                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg">
+                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base">
                   Blog for parrot sellers
                 </p>
-                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-sm">
+                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base">
                   The website brings together parrot sellers
                 </p>
                 <a href="https://github.com/GrzegorzSiemieniec/papugi">
-                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px]">
+                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[160px] h-[30px]">
                     <FontAwesomeIcon
                       icon={faGithub}
                       className="w-4 h-4 text-white mr-2"
@@ -346,23 +370,26 @@ export default function Home() {
                 </a>
               </div>
             </SwiperSlide>
-            <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5">
-              <div className=" bg-[#DCCFED] xl:h-[420px] xl:w-[280px] lg:h-[355px] lg:w-[220px] md:w-[200px] md:h-[330px] rounded-lg shadow-gray-800/60 shadow-md select-none">
+            <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3">
+              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[180px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
                 <Image
                   src={papugi}
-                  alt="Your Image Description"
-                  width={200}
-                  // dla lg 150 dla md 130 i sm
+                  alt="Miniatur"
+                  sizes="100vw"
+                  style={{
+                    width: '75%',
+                    height: 'auto',
+                  }}
                   className=" mx-auto py-6 rounded-2xl"
                 />
-                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg">
+                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base">
                   Blog for parrot sellers
                 </p>
-                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-sm">
+                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base">
                   The website brings together parrot sellers
                 </p>
                 <a href="https://github.com/GrzegorzSiemieniec/papugi">
-                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px]">
+                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[160px] h-[30px]">
                     <FontAwesomeIcon
                       icon={faGithub}
                       className="w-4 h-4 text-white mr-2"
@@ -373,23 +400,26 @@ export default function Home() {
                 </a>
               </div>
             </SwiperSlide>
-            <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5">
-              <div className=" bg-[#DCCFED] xl:h-[420px] xl:w-[280px] lg:h-[355px] lg:w-[220px] md:w-[200px] md:h-[330px] rounded-lg shadow-gray-800/60 shadow-md select-none">
+            <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3">
+              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[180px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
                 <Image
                   src={papugi}
-                  alt="Your Image Description"
-                  width={200}
-                  // dla lg 150 dla md 130 i sm
+                  alt="Miniatur"
+                  sizes="100vw"
+                  style={{
+                    width: '75%',
+                    height: 'auto',
+                  }}
                   className=" mx-auto py-6 rounded-2xl"
                 />
-                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg">
+                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base">
                   Blog for parrot sellers
                 </p>
-                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-sm">
+                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base">
                   The website brings together parrot sellers
                 </p>
                 <a href="https://github.com/GrzegorzSiemieniec/papugi">
-                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px]">
+                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[160px] h-[30px]">
                     <FontAwesomeIcon
                       icon={faGithub}
                       className="w-4 h-4 text-white mr-2"
@@ -400,23 +430,26 @@ export default function Home() {
                 </a>
               </div>
             </SwiperSlide>
-            <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5">
-              <div className=" bg-[#DCCFED] xl:h-[420px] xl:w-[280px] lg:h-[355px] lg:w-[220px] md:w-[200px] md:h-[330px] rounded-lg shadow-gray-800/60 shadow-md select-none">
+            <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3">
+              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[180px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
                 <Image
                   src={papugi}
-                  alt="Your Image Description"
-                  width={200}
-                  // dla lg 150 dla md 130 i sm
+                  alt="Miniatur"
+                  sizes="100vw"
+                  style={{
+                    width: '75%',
+                    height: 'auto',
+                  }}
                   className=" mx-auto py-6 rounded-2xl"
                 />
-                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg">
+                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base">
                   Blog for parrot sellers
                 </p>
-                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-sm">
+                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base">
                   The website brings together parrot sellers
                 </p>
                 <a href="https://github.com/GrzegorzSiemieniec/papugi">
-                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px]">
+                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[160px] h-[30px]">
                     <FontAwesomeIcon
                       icon={faGithub}
                       className="w-4 h-4 text-white mr-2"
@@ -427,23 +460,26 @@ export default function Home() {
                 </a>
               </div>
             </SwiperSlide>
-            <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5">
-              <div className=" bg-[#DCCFED] xl:h-[420px] xl:w-[280px] lg:h-[355px] lg:w-[220px] md:w-[200px] md:h-[330px] rounded-lg shadow-gray-800/60 shadow-md select-none">
+            <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3">
+              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[180px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
                 <Image
                   src={papugi}
-                  alt="Your Image Description"
-                  width={200}
-                  // dla lg 150 dla md 130 i sm
+                  alt="Miniatur"
+                  sizes="100vw"
+                  style={{
+                    width: '75%',
+                    height: 'auto',
+                  }}
                   className=" mx-auto py-6 rounded-2xl"
                 />
-                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg">
+                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base">
                   Blog for parrot sellers
                 </p>
-                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-sm">
+                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base">
                   The website brings together parrot sellers
                 </p>
                 <a href="https://github.com/GrzegorzSiemieniec/papugi">
-                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px]">
+                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[160px] h-[30px]">
                     <FontAwesomeIcon
                       icon={faGithub}
                       className="w-4 h-4 text-white mr-2"
@@ -454,23 +490,26 @@ export default function Home() {
                 </a>
               </div>
             </SwiperSlide>
-            <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5">
-              <div className=" bg-[#DCCFED] xl:h-[420px] xl:w-[280px] lg:h-[355px] lg:w-[220px] md:w-[200px] md:h-[330px] rounded-lg shadow-gray-800/60 shadow-md select-none">
+            <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3">
+              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[180px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
                 <Image
                   src={papugi}
-                  alt="Your Image Description"
-                  width={200}
-                  // dla lg 150 dla md 130 i sm
+                  alt="Miniatur"
+                  sizes="100vw"
+                  style={{
+                    width: '75%',
+                    height: 'auto',
+                  }}
                   className=" mx-auto py-6 rounded-2xl"
                 />
-                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg">
+                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base">
                   Blog for parrot sellers
                 </p>
-                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-sm">
+                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base">
                   The website brings together parrot sellers
                 </p>
                 <a href="https://github.com/GrzegorzSiemieniec/papugi">
-                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px]">
+                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[160px] h-[30px]">
                     <FontAwesomeIcon
                       icon={faGithub}
                       className="w-4 h-4 text-white mr-2"
@@ -493,13 +532,13 @@ export default function Home() {
         initial="hide"
         whileInView="show"
         exit="hide" 
-        className="text-[#291C3A] mt-20 mb-8 xl:text-6xl lg:text-6xl md:text-5xl font-extrabold">Start working with me.</motion.h1>
+        className="text-[#291C3A] mt-20 mb-8 xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl font-extrabold text-3xl">Start working with me.</motion.h1>
 
         <motion.p 
         initial="hide"
         whileInView="show"
         exit="hide" 
-        className=" text-[#291C3A] font-bold mb-12 text-xl opacity-60">grzegorz021104@gmail.com</motion.p>
+        className=" text-[#291C3A] font-bold mb-12 xl:text-xl lg:text-xl md:text-lg sm:text-base text-md opacity-60">grzegorz021104@gmail.com</motion.p>
 
         <button
           onClick={handleEmailClick}
@@ -511,26 +550,29 @@ export default function Home() {
               ? buttonStyles.backgroundImage
               : 'linear-gradient(to right, #Fuchsia, #FF00FF, #FF69B4)',
           }}
-          className=" border-t shadow-lg font-serif text-lg font-bold text-grey-lightest mb-24 w-[170px] h-[60px] rounded-xl">Contact Me</button>
+          className=" border-t shadow-lg font-serif text-lg font-bold text-grey-lightest mb-24 xl:w-[170px] xl:h-[60px] lg:w-[170px] lg:h-[60px] md:w-[150px] md:h-[60px] sm:w-[150px] sm:h-[60px] w-[150px] h-[60px] rounded-xl">Contact Me</button>
           
       </div>
       <div className="footer bg-[#291C3A] w-full h-44 mx-auto">
         <Image
           src={yourImage}
-          alt="Your Image Description"
-          width={270}
-          height={50}
+          alt="Logo CezikDev"
+          sizes="100vw"
+          style={{
+            width: '55%',
+            height: 'auto',
+          }}
           className="mx-auto"
         />
-        <div className=" flex justify-center">
+        <div className=" justify-center items-center flex">
           <motion.p
-            className=" inline float-left"
+            className=" inline-flex float-left"
             initial="hide"
             whileInView="show"
             exit="hide"
             variants={textFromLeftAnimationFooter}
           >
-            ©2024 Designed and build by
+            <p>©2024 Designed and build by</p>
             <p className=" inline bg-gradient-to-r from-[#c188f0] via-[#b666f8] to-[#e50dec] bg-clip-text text-transparent">
             &nbsp;Grzegorz Siemieniec&nbsp;
             </p>

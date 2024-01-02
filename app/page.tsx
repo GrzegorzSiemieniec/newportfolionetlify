@@ -76,7 +76,7 @@ export default function Home() {
   const textFromLeftAnimationFooter: Variants = {
     hide: {
       opacity: 0,
-      x: -300,
+      x: -100,
     },
     show: {
       opacity: 1,
@@ -105,7 +105,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center font-Inter select-none max-w-full scrollbar-none">
       <div className="menu bg-gradient-to-r from-[#8121D0] via-[#5a2983] to-[#291C3A] w-full inline-flex h-auto p-5 my-auto items-center justify-center">
-        <ul className="menuLi text-white xl:text-2xl lg:text-2xl md:text-xl sm:text-xl text-lg inline-flex my-auto">
+        <ul className="menuLi text-white xl:text-2xl lg:text-2xl md:text-xl sm:text-xl text-sm inline-flex my-auto">
           <li className="hover:scale-125 transition-transform">
             <a href="#aboutme">About</a>
           </li>
@@ -121,7 +121,7 @@ export default function Home() {
         id="home"
         className="introduction bg-[#331C52] w-full xl:pl-24 lg:pl-7 md:pl-7 sm:pl-7 h-fit xl:pt-52 lg:pt-44 md:pt-36 sm:pt-20 pt-16 pl-6 transition-transform transform"
       >
-        <p className="font-bold text-[#9d7fc7] xl:text-8xl ld:text-8xl md:text-7xl sm:text-7xl text-6xl pb-5">
+        <p className="font-bold text-[#9d7fc7] xl:text-8xl ld:text-8xl md:text-7xl sm:text-7xl text-4xl pb-5">
           <Typewriter
             options={{
               delay: 30,
@@ -131,13 +131,13 @@ export default function Home() {
             }}
           />
         </p>
-        <p className=" xl:text-5xl lg:text-5xl md:text-3xl sm:text-3xl text-2xl pb-5">Grzegorz Siemieniec</p>
+        <p className=" xl:text-5xl lg:text-5xl md:text-3xl sm:text-3xl text-base pb-5">Grzegorz Siemieniec</p>
         <ul className="inline-flex">
           <li className="mr-3">
             <a href="https://github.com/GrzegorzSiemieniec">
               <FontAwesomeIcon
                 icon={faGithub}
-                className="xl:w-8 xl:h-8 lg:w-8 lg:h-8 md:w-7 md:h-7 sm:w-7 sm:h-5 w-7 h-5 text-[#9d7fc7] rounded-lg hover:cursor-pointer"
+                className="xl:w-8 xl:h-8 lg:w-8 lg:h-8 md:w-7 md:h-7 sm:w-7 sm:h-7  w-4 h-4 text-[#9d7fc7] rounded-lg xl:mb-20 lg:mb-20 md:mb-16 sm:mb-14 mb-8 hover:cursor-pointer"
               />
             </a>
           </li>
@@ -145,7 +145,7 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/grzegorz-siemieniec-526539250/">
               <FontAwesomeIcon
                 icon={faLinkedin}
-                className="xl:w-8 xl:h-8 lg:w-8 lg:h-8 md:w-7 md:h-7 sm:w-7 sm:h-7  w-7 h-5 text-[#9d7fc7] rounded-lg xl:mb-20 lg:mb-20 md:mb-16 sm:mb-14 mb-8 hover:cursor-pointer"
+                className="xl:w-8 xl:h-8 lg:w-8 lg:h-8 md:w-7 md:h-7 sm:w-7 sm:h-7  w-4 h-4 text-[#9d7fc7] rounded-lg xl:mb-20 lg:mb-20 md:mb-16 sm:mb-14 mb-8 hover:cursor-pointer"
               />
             </a>
           </li>
@@ -162,13 +162,13 @@ export default function Home() {
           exit="hide"
           variants={Skills}
         >
-          <span className="xl:text-8xl font-bold xl:mr-5 lg:mr-4 md:mr-4 lg:text-8xl md:text-7xl sm:text-7xl text-5xl">6</span>
-          <p className="xl:text-4xl lg:text-4xl md:text-3xl sm:text-2xl text-xl items-center text-[#DCCFED] pl-2">
+          <span className="xl:text-8xl font-bold xl:mr-5 lg:mr-4 md:mr-4 lg:text-8xl md:text-7xl sm:text-7xl text-3xl">6</span>
+          <p className="xl:text-4xl lg:text-4xl md:text-3xl sm:text-2xl text-sm items-center text-[#DCCFED] pl-2">
             <span>PROJECTS</span> <span className="block">COMPLETED</span>
           </p>
 
-          <span className="xl:text-8xl font-bold xl:mr-5 lg:mr-4 md:mr-4 xl:pl-24 lg:pl-7 md:pl-7 sm:pl-7 pl-5 lg:text-8xl md:text-7xl sm:text-7xl text-5xl">1</span>
-          <p className="xl:text-4xl lg:text-4xl md:text-3xl text-xl pl-2 items-center text-[#DCCFED]">
+          <span className="xl:text-8xl font-bold xl:mr-5 lg:mr-4 md:mr-4 xl:pl-24 lg:pl-7 md:pl-7 sm:pl-7 pl-5 lg:text-8xl md:text-7xl sm:text-7xl text-3xl">1</span>
+          <p className="xl:text-4xl lg:text-4xl md:text-3xl text-sm pl-2 items-center text-[#DCCFED]">
             <span>YEAR OF</span>
             <span className="block">EXPERIENCE</span>
           </p>
@@ -194,19 +194,19 @@ export default function Home() {
           I can also write programs in Node.js, <br />
           but I am more passionate about building websites :)
         </motion.p>
-        <p className="text-[#291C3A] xl:text-4xl lg:text-4xl md:text-3xl font-bold  xl:mt-20 xl:mb-12 lg:mt-20 lg:mb-12 md:mt-16 md:mb-10 sm:mt-14 sm:mb-10 xl:pr-24 lg:pr-7 md:pr-5 sm:pr-5 pr-3 mt-8 pb-32 text-xl float-right">
+        <p className="text-[#291C3A] xl:text-4xl lg:text-4xl md:text-3xl font-bold  xl:mt-20 xl:mb-12 lg:mt-20 lg:mb-12 md:mt-16 md:mb-10 sm:mt-14 sm:mb-10 xl:pr-24 lg:pr-7 md:pr-5 sm:pr-5 pr-3 pl-3 mt-8 pb-32 text-xl float-right">
           My Skills
           <p className=" text-[#291C3A] xl:text-3xl lg:text-3xl md:text-2xl mt-4 pb-8 font-normal xl:pr-24 lg:pr-7 md:pr-5 sm:pr-5 text-base">
             Technologies I have been working recently
           </p>
           <motion.ul
-            className=" inline-grid grid-cols-3 gap-3 my-auto mx-auto xl:pr-24 lg:pr-7 md:pr-5 sm:pr-5 pb-16"
+            className=" inline-grid grid-cols-3 xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-3 gap-3 my-auto mx-auto xl:pr-24 lg:pr-7 md:pr-5 sm:pr-5 pb-16"
             initial="hide"
             whileInView="show"
             exit="hide"
             variants={Skills}
           >
-            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white p-4">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 w-14 h-14 bg-[#4f3e63] rounded-lg text-white p-4">
               <Image
                 src={vue}
                 alt="Vue icon"
@@ -217,7 +217,7 @@ export default function Home() {
                   }}
               />
             </li>
-            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white pt-1 ">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 w-14 h-14 bg-[#4f3e63] rounded-lg text-white pt-1 ">
               <Image
                 src={next}
                 alt="Next icon"
@@ -228,7 +228,7 @@ export default function Home() {
                   }}
               />
             </li>
-            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white p-3">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 w-14 h-14 bg-[#4f3e63] rounded-lg text-white p-3">
               <Image
                 src={git}
                 alt="Git icon"
@@ -239,7 +239,7 @@ export default function Home() {
                 }}
               />
             </li>
-            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white pt-4 ">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 w-14 h-14 bg-[#4f3e63] rounded-lg text-white pt-4 ">
               <Image
                 src={node}
                 alt="Node icon"
@@ -250,7 +250,7 @@ export default function Home() {
                 }}
               />
             </li>
-            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white p-3">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 w-14 h-14 bg-[#4f3e63] rounded-lg text-white p-3">
               <Image
                 src={js}
                 alt="JS icon"
@@ -261,7 +261,7 @@ export default function Home() {
                 }}
               />
             </li>
-            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white p-1 ">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 w-14 h-14 bg-[#4f3e63] rounded-lg text-white p-1 ">
               <Image
                 src={mongodb}
                 alt="Mongodb icon"
@@ -272,7 +272,7 @@ export default function Home() {
                   }}
               />
             </li>
-            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white p-3">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 w-14 h-14 bg-[#4f3e63] rounded-lg text-white p-3">
               <Image
                 src={react}
                 alt="React icon"
@@ -283,7 +283,7 @@ export default function Home() {
                   }}
               />
             </li>
-            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white p-2">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 w-14 h-14 bg-[#4f3e63] rounded-lg text-white p-2">
               <Image
                 src={tailwind}
                 alt="Tailwind icon"
@@ -294,10 +294,10 @@ export default function Home() {
                   }}
               />
             </li>
-            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white pt-5 p-1 ">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 w-14 h-14 bg-[#4f3e63] rounded-lg text-white p-3 ">
               <Image
-                src={php}
-                alt="PHP icon"
+                src={html}
+                alt="HTML icon"
                 sizes="100vw"
                   style={{
                     width: '100%',
@@ -305,10 +305,10 @@ export default function Home() {
                   }}
               />
             </li>
-            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 bg-[#4f3e63] rounded-lg text-white p-3 ">
+            <li className="xl:w-24 xl:h-24 lg:h-24 lg:w-24 md:w-20 md:h-20 sm:w-20 sm:h-20 w-14 h-14 bg-[#4f3e63] rounded-lg text-white pt-5 p-1 xl:visible lg:visible md:visible sm:invisible invisible">
               <Image
-                src={html}
-                alt="HTML icon"
+                src={php}
+                alt="PHP icon"
                 sizes="100vw"
                   style={{
                     width: '100%',
@@ -341,7 +341,7 @@ export default function Home() {
             className= "xl:mb-52 lg:mb-52 md:mb-44 sm:mb-36 text-center hover:cursor-grab select-none xl:h-[442px] lg:h-[389px] md:h-[360px] sm:h-[338px] h-[338px]"
           >
             <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3">
-              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[180px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
+              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[140px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
                 <Image
                   src={papugi}
                   alt="Miniatur"
@@ -352,17 +352,17 @@ export default function Home() {
                   }}
                   className=" mx-auto py-6 rounded-2xl"
                 />
-                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base">
+                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base text-md">
                   Blog for parrot sellers
                 </p>
-                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base">
+                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base text-sm">
                   The website brings together parrot sellers
                 </p>
                 <a href="https://github.com/GrzegorzSiemieniec/papugi">
-                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[160px] h-[30px]">
+                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[125px] h-[30px] text-[12px] inline-flex items-center justify-center">
                     <FontAwesomeIcon
                       icon={faGithub}
-                      className="w-4 h-4 text-white mr-2"
+                      className="xl:w-4 xl:h-4 lg:w-4 lg:h-4 md:w-4 md:h-4 sm:w-4 sm:h-4 h-4 w-4 pl-1 text-white mr-2"
                     />
                     <span className="xl:text-base lg:text-sm md:text-sm"> View Code</span>
                    
@@ -371,7 +371,7 @@ export default function Home() {
               </div>
             </SwiperSlide>
             <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3">
-              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[180px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
+              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[140px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
                 <Image
                   src={papugi}
                   alt="Miniatur"
@@ -382,17 +382,17 @@ export default function Home() {
                   }}
                   className=" mx-auto py-6 rounded-2xl"
                 />
-                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base">
+                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base text-md">
                   Blog for parrot sellers
                 </p>
-                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base">
+                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base text-sm">
                   The website brings together parrot sellers
                 </p>
                 <a href="https://github.com/GrzegorzSiemieniec/papugi">
-                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[160px] h-[30px]">
+                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[125px] h-[30px] text-[12px] inline-flex items-center justify-center">
                     <FontAwesomeIcon
                       icon={faGithub}
-                      className="w-4 h-4 text-white mr-2"
+                      className="xl:w-4 xl:h-4 lg:w-4 lg:h-4 md:w-4 md:h-4 sm:w-4 sm:h-4 h-4 w-4 pl-1 text-white mr-2"
                     />
                     <span className="xl:text-base lg:text-sm md:text-sm"> View Code</span>
                    
@@ -401,7 +401,7 @@ export default function Home() {
               </div>
             </SwiperSlide>
             <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3">
-              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[180px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
+              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[140px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
                 <Image
                   src={papugi}
                   alt="Miniatur"
@@ -412,17 +412,17 @@ export default function Home() {
                   }}
                   className=" mx-auto py-6 rounded-2xl"
                 />
-                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base">
+                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base text-md">
                   Blog for parrot sellers
                 </p>
-                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base">
+                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base text-sm">
                   The website brings together parrot sellers
                 </p>
                 <a href="https://github.com/GrzegorzSiemieniec/papugi">
-                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[160px] h-[30px]">
+                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[125px] h-[30px] text-[12px] inline-flex items-center justify-center">
                     <FontAwesomeIcon
                       icon={faGithub}
-                      className="w-4 h-4 text-white mr-2"
+                      className="xl:w-4 xl:h-4 lg:w-4 lg:h-4 md:w-4 md:h-4 sm:w-4 sm:h-4 h-4 w-4 pl-1 text-white mr-2"
                     />
                     <span className="xl:text-base lg:text-sm md:text-sm"> View Code</span>
                    
@@ -431,7 +431,7 @@ export default function Home() {
               </div>
             </SwiperSlide>
             <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3">
-              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[180px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
+              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[140px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
                 <Image
                   src={papugi}
                   alt="Miniatur"
@@ -442,17 +442,17 @@ export default function Home() {
                   }}
                   className=" mx-auto py-6 rounded-2xl"
                 />
-                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base">
+                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base text-md">
                   Blog for parrot sellers
                 </p>
-                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base">
+                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base text-sm">
                   The website brings together parrot sellers
                 </p>
                 <a href="https://github.com/GrzegorzSiemieniec/papugi">
-                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[160px] h-[30px]">
+                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[125px] h-[30px] text-[12px] inline-flex items-center justify-center">
                     <FontAwesomeIcon
                       icon={faGithub}
-                      className="w-4 h-4 text-white mr-2"
+                      className="xl:w-4 xl:h-4 lg:w-4 lg:h-4 md:w-4 md:h-4 sm:w-4 sm:h-4 h-4 w-4 pl-1 text-white mr-2"
                     />
                     <span className="xl:text-base lg:text-sm md:text-sm"> View Code</span>
                    
@@ -461,7 +461,7 @@ export default function Home() {
               </div>
             </SwiperSlide>
             <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3">
-              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[180px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
+              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[140px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
                 <Image
                   src={papugi}
                   alt="Miniatur"
@@ -472,17 +472,17 @@ export default function Home() {
                   }}
                   className=" mx-auto py-6 rounded-2xl"
                 />
-                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base">
+                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base text-md">
                   Blog for parrot sellers
                 </p>
-                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base">
+                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base text-sm">
                   The website brings together parrot sellers
                 </p>
                 <a href="https://github.com/GrzegorzSiemieniec/papugi">
-                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[160px] h-[30px]">
+                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[125px] h-[30px] text-[12px] inline-flex items-center justify-center">
                     <FontAwesomeIcon
                       icon={faGithub}
-                      className="w-4 h-4 text-white mr-2"
+                      className="xl:w-4 xl:h-4 lg:w-4 lg:h-4 md:w-4 md:h-4 sm:w-4 sm:h-4 h-4 w-4 pl-1 text-white mr-2"
                     />
                     <span className="xl:text-base lg:text-sm md:text-sm"> View Code</span>
                    
@@ -491,7 +491,7 @@ export default function Home() {
               </div>
             </SwiperSlide>
             <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3">
-              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[180px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
+              <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[140px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
                 <Image
                   src={papugi}
                   alt="Miniatur"
@@ -502,17 +502,17 @@ export default function Home() {
                   }}
                   className=" mx-auto py-6 rounded-2xl"
                 />
-                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base">
+                <p className="text-[#291C3A] xl:text-2xl font-bold lg:text-lg md:text-lg sm:text-base text-md">
                   Blog for parrot sellers
                 </p>
-                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base">
+                <p className=" text-[#291C3A] pt-5 xl:text-lg mb-[20px] lg:text-sm md:text-base sm:text-base text-sm">
                   The website brings together parrot sellers
                 </p>
                 <a href="https://github.com/GrzegorzSiemieniec/papugi">
-                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[160px] h-[30px]">
+                  <button className="bg-[#291C3A] xl:w-[255px] text-white underline xl:h-[35px] rounded-xl lg:w-[200px] lg:h-[35px] md:h-[35px] md:w-[150px] sm:h-[30px] sm:w-[160px] w-[125px] h-[30px] text-[12px] inline-flex items-center justify-center">
                     <FontAwesomeIcon
                       icon={faGithub}
-                      className="w-4 h-4 text-white mr-2"
+                      className="xl:w-4 xl:h-4 lg:w-4 lg:h-4 md:w-4 md:h-4 sm:w-4 sm:h-4 h-4 w-4 pl-1 text-white mr-2"
                     />
                     <span className="xl:text-base lg:text-sm md:text-sm"> View Code</span>
                    
@@ -532,7 +532,7 @@ export default function Home() {
         initial="hide"
         whileInView="show"
         exit="hide" 
-        className="text-[#291C3A] mt-20 mb-8 xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl font-extrabold text-3xl">Start working with me.</motion.h1>
+        className="text-[#291C3A] mt-20 mb-8 xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl font-extrabold text-2xl">Start working with me.</motion.h1>
 
         <motion.p 
         initial="hide"
@@ -557,9 +557,8 @@ export default function Home() {
         <Image
           src={yourImage}
           alt="Logo CezikDev"
-          sizes="100vw"
           style={{
-            width: '55%',
+            width: 'auto',
             height: 'auto',
           }}
           className="mx-auto"
@@ -572,8 +571,8 @@ export default function Home() {
             exit="hide"
             variants={textFromLeftAnimationFooter}
           >
-            <p>©2024 Designed and build by</p>
-            <p className=" inline bg-gradient-to-r from-[#c188f0] via-[#b666f8] to-[#e50dec] bg-clip-text text-transparent">
+            <p className=" text-[10px] xl:text-xl lg:text-xl md:text-base sm:text-md">©2024 Designed and build by</p>
+            <p className=" inline bg-gradient-to-r from-[#c188f0] via-[#b666f8] to-[#e50dec] bg-clip-text text-transparent xl:text-xl lg:text-xl md:text-base sm:text-md text-[10px]">
             &nbsp;Grzegorz Siemieniec&nbsp;
             </p>
           </motion.p>

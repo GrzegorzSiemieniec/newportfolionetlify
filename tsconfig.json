@@ -28,6 +28,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/scrollToTop.tsx"
-  ],
+, "app/pdf/page.jsx", "app/pdf/pdfViewer.jsx", "app/pdf/page.jsx", "app/pdf/page.jsx"  ],
   "exclude": ["node_modules"]
 }

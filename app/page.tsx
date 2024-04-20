@@ -345,7 +345,7 @@ export default function Home() {
             <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3">
               <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[140px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
                 <Image
-                  // src="/img/papugi.png"
+                  src="/img/papugi"
                   alt="Miniature"
                   sizes="100vw"
                   width={200}
@@ -375,7 +375,7 @@ export default function Home() {
             <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3">
               <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[140px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
                 <Image
-                  // src="/img/papugi.png"
+                  src="/img/papugi"
                   alt="Miniature"
                   sizes="100vw"
                   width={200}
@@ -405,7 +405,7 @@ export default function Home() {
             <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3">
               <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[140px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
                 <Image
-                  // src="/img/papugi.png"
+                  src="/img/papugi"
                   alt="Miniature"
                   sizes="100vw"
                   width={200}
@@ -435,7 +435,7 @@ export default function Home() {
             <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3">
               <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[140px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
                 <Image
-                  // src="/img/papugi.png"
+                  src="/img/papugi"
                   alt="Miniature"
                   sizes="100vw"
                   width={200}
@@ -465,7 +465,7 @@ export default function Home() {
             <SwiperSlide className=" xl:pl-24 lg:pl-7 md:pl-5 sm:pl-5 pl-3">
               <div className=" bg-[#DCCFED] xl:h-[440px] xl:w-[280px] lg:h-[370px] lg:w-[220px] md:w-[200px] md:h-[355px] sm:w-[180px] sm:h-[335px]  w-[140px] h-[335px] rounded-lg shadow-gray-800/60 shadow-md select-none">
                 <Image
-                  // src="/img/papugi.png"
+                  src="/img/papugi"
                   alt="Miniature"
                   sizes="100vw"
                   width={200}
